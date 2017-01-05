@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  s.name         = "MGJRouter"
+  s.name         = "MGJRouters"
   s.version      = "0.9.3"
   s.summary      = "an smart iOS URL Router"
 
