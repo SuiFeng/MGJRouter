@@ -85,7 +85,10 @@ NSString *const MGJRouterParameterUserInfo = @"MGJRouterParameterUserInfo";
 
 + (BOOL)canOpenURL:(NSString *)URL
 {
-    return [[self sharedInstance] extractParametersFromURL:URL] ? YES : NO;
+    /*旧有的方式有bug
+    return [[self sharedInstance] extractParametersFromURL:URL] ? YES : NO;*/
+    NSDictionary *parameters = [[self sharedInstance] extractParametersFromURL:URL];
+    return parameters[@"block"] ? YES : NO;
 }
 
 + (NSString *)generateURLWithPattern:(NSString *)pattern parameters:(NSArray *)parameters

@@ -1,6 +1,8 @@
 # MGJRouter
 一个高效/灵活的 iOS URL Router
 
+### 修正了官方canOpenURL的适配bug by wenhuiw
+
 ### 2015-08-22 更新
 
 #### 添加了同步获取 Object 的方法
